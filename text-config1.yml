@@ -1,0 +1,24 @@
+server:
+    port: 8321
+
+
+--- 激活profiles 为test
+spring:
+    profiles:
+        actives: test
+        
+
+------
+
+
+spring:
+    profiles: dev
+    application:
+        name: test-cloud-dev-2.0
+       
+
+
+spring:
+    profiles: test
+    application:
+        name: test-cloud-test-2.0
