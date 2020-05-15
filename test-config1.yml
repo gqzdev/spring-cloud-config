@@ -1,20 +1,31 @@
-server:
-    port: 8321
-
 spring:
     profiles:
         actives: test
         
 
 ---
+server:
+    port: 8082
+
 spring:
     profiles: dev
     application:
         name: test-cloud-dev-2.0
-       
 
 ---
+server:
+    port: 8081
+
 spring:
     profiles: test
     application:
         name: test-cloud-test-2.0
+
+---
+server:
+    port: 80
+
+spring:
+    profiles: prod
+    application:
+        name: test-cloud-pro-2.0
